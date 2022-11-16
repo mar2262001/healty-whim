@@ -2,14 +2,20 @@
     if(array_key_exists('menu', $_GET)){
         $var = $_GET['menu'];
         switch ($var) {
-            case 1:
-                require_once('Clientes/registrar.php');
+            case "offers":
+                require_once('offers.php');
             break;
-            case 2:
-                require_once('Clientes/registrar.php');
+            case "administrator":
+                require_once('administrator.php');
             break;
-            case 3:
-                require_once('Clientes/registrar.php');
+            case "about":
+                require_once('about.php');
+            break;
+            case "contact":
+                require_once('contact.php');
+            break;
+            case "login":
+                require_once('login.php');
             break;
             default:
                 require_once('homepage.php');

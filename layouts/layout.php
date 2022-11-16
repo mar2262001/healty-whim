@@ -14,6 +14,10 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <?php 
+            require_once('data/dummyData.php');
+            require_once('data/functions.php');
+        ?>
         <header>
         <?php require_once('layouts/header.php'); ?>	
         </header>

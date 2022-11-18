@@ -12,10 +12,10 @@
             echo '<div class="row">';
             for($ix = $index; $ix < $indexCol; $ix++){
                 if($ix >= ($numeroElementos)){break;}
-                $image = $data[$ix]["Image"];
-                $title = $data[$ix]["Title"];
-                $price = $data[$ix]["Price"];
-                $category = $data[$ix]["category"];
+                $image = trim($data[$ix]["Image"]);
+                $title = trim($data[$ix]["Title"]);
+                $price = trim($data[$ix]["Price"]);
+                $category = strtoupper($data[$ix]["category"]);
                 $description = strlen($data[$ix]["Description"]) >= 100 ? substr($data[$ix]["Description"], 0, 99) : $data[$ix]["Description"];
                 echo <<<EOT
                     <div class="col-sm">

@@ -24,9 +24,9 @@
           Categorias
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class='dropdown-item' href='index.php?menu=homepage&category=all'>Todos</a>
           <?php
             foreach($categories as $valor){
-              $categories = $valor;
               echo "<a class='dropdown-item' href='index.php?menu=homepage&category=$valor'>$valor</a>";
             }
           ?>  
